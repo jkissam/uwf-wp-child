@@ -9,6 +9,8 @@ function uwf_child_enqueue_styles() {
 		'uwf-wp',
 	);
     wp_enqueue_style( 'uwf-child-style', get_stylesheet_directory_uri() . '/style.css', $dependencies );
+    
+    wp_enqueue_script( 'uwf-child-script', get_stylesheet_directory_uri() . '/script.js', array( 'uwf-uwfutil') );
 
 /*
 	$print_dependencies = array(
